@@ -14,15 +14,15 @@
       <% refrigerators.forEach(refrigerator => { %>
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="<%= refrigerator.image %>" class="card-img-top" alt="<%= refrigerator.brand %>">
+            <img src="<%= refrigerator.image %>" class="card-img-top" alt="<%= refrigerator.brand %>" style="height: 200px; object-fit: cover;">
             <div class="card-body">
               <h5 class="card-title"><%= refrigerator.brand %></h5>
               <p class="card-text"><strong>Price:</strong> $<%= refrigerator.price %></p>
               <p class="card-text"><strong>Description:</strong> <%= refrigerator.desc %></p>
               <p class="card-text"><strong>Door Type:</strong> <%= refrigerator.door %></p>
-              <a href="/refrigerators/<%= refrigerator._id %>" class="btn btn-primary">View Details</a>
-              <a href="/refrigerators/<%= refrigerator._id %>/edit" class="btn btn-secondary">Edit</a>
-              <form action="/refrigerators/<%= refrigerator._id %>?_method=DELETE" method="POST" class="d-inline">
+              <a href="/phones/<%= refrigerator._id %>" class="btn btn-primary">View Details</a>
+              <a href="/phones/<%= refrigerator._id %>/edit" class="btn btn-secondary">Edit</a>
+              <form action="/phones/<%= refrigerator._id %>?_method=DELETE" method="POST" class="d-inline">
                 <button type="submit" class="btn btn-danger">Delete</button>
               </form>
             </div>

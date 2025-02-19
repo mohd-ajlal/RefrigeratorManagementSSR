@@ -10,7 +10,7 @@
   <%- include("components/navbar") %>
   <div class="container mt-4">
     <h1 class="mb-4">Edit Refrigerator</h1>
-    <form action="/refrigerators/<%= refrigerator._id %>?_method=PUT" method="POST">
+    <form action="/phones/<%= refrigerator._id %>?_method=PUT" method="POST">
       <div class="form-group">
         <label for="brand">Brand:</label>
         <input type="text" class="form-control" id="brand" name="brand" value="<%= refrigerator.brand %>" required readonly>

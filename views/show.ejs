@@ -18,8 +18,8 @@
         <p><strong>Price:</strong> $<%= refrigerator.price %></p>
         <p><strong>Description:</strong> <%= refrigerator.desc %></p>
         <p><strong>Door Type:</strong> <%= refrigerator.door %></p>
-        <a href="/refrigerators/<%= refrigerator._id %>/edit" class="btn btn-secondary">Edit</a>
-        <form action="/refrigerators/<%= refrigerator._id %>?_method=DELETE" method="POST" class="d-inline">
+        <a href="/phones/<%= refrigerator._id %>/edit" class="btn btn-secondary">Edit</a>
+        <form action="/phones/<%= refrigerator._id %>?_method=DELETE" method="POST" class="d-inline">
           <button type="submit" class="btn btn-danger">Delete</button>
         </form>
       </div>
