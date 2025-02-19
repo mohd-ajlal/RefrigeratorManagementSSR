@@ -14,10 +14,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(express.static("public"));
 
-app.use("/phones", refrigeratorsRoutes);  
+app.use("/refrigerators", refrigeratorsRoutes);  
 
 app.get("/", (req, res) => {
-  res.redirect("/phones");
+  res.redirect("/refrigerators");
 });
 
 app.listen(3000, () => {

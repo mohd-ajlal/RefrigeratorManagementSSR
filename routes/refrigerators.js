@@ -16,7 +16,7 @@ router.get("/new", (req, res) => {
 
 router.post("/", async (req, res) => {
   await Refrigerator.create(req.body);
-  res.redirect("/phones");
+  res.redirect("/refrigerators");
 });
 
 
@@ -33,13 +33,13 @@ router.get("/:id/edit", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   await Refrigerator.findByIdAndUpdate(req.params.id, req.body);
-  res.redirect(`/phones/${req.params.id}`);
+  res.redirect(`/refrigerators/${req.params.id}`);
 });
 
 
 router.delete("/:id", async (req, res) => {
   await Refrigerator.findByIdAndDelete(req.params.id);
-  res.redirect("/phones");
+  res.redirect("/refrigerators");
 });
 
 module.exports = router;

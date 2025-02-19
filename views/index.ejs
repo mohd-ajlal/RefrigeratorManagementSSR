@@ -20,9 +20,9 @@
               <p class="card-text"><strong>Price:</strong> $<%= refrigerator.price %></p>
               <p class="card-text"><strong>Description:</strong> <%= refrigerator.desc %></p>
               <p class="card-text"><strong>Door Type:</strong> <%= refrigerator.door %></p>
-              <a href="/phones/<%= refrigerator._id %>" class="btn btn-primary">View Details</a>
-              <a href="/phones/<%= refrigerator._id %>/edit" class="btn btn-secondary">Edit</a>
-              <form action="/phones/<%= refrigerator._id %>?_method=DELETE" method="POST" class="d-inline">
+              <a href="/refrigerators/<%= refrigerator._id %>" class="btn btn-primary">View Details</a>
+              <a href="/refrigerators/<%= refrigerator._id %>/edit" class="btn btn-secondary">Edit</a>
+              <form action="/refrigerators/<%= refrigerator._id %>?_method=DELETE" method="POST" class="d-inline">
                 <button type="submit" class="btn btn-danger">Delete</button>
               </form>
             </div>
