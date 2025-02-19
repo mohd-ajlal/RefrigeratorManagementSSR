@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Add Refrigerator</title>
+</head>
+<body>
+  <%- include("components/navbar") %>
+  <div class="container mt-4">
+    <h1 class="mb-4">Add a New Refrigerator</h1>
+    <form action="/phones" method="POST">
+      <div class="form-group">
+        <label for="brand">Brand:</label>
+        <input type="text" class="form-control" id="brand" name="brand" required>
+      </div>
+      <div class="form-group">
+        <label for="price">Price:</label>
+        <input type="number" class="form-control" id="price" name="price" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Image URL:</label>
+        <input type="text" class="form-control" id="image" name="image" required>
+      </div>
+      <div class="form-group">
+        <label for="desc">Description:</label>
+        <textarea class="form-control" id="desc" name="desc" rows="3" required></textarea>
+      </div>
+      <div class="form-group">
+        <label for="door">Door Type:</label>
+        <input type="text" class="form-control" id="door" name="door" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Refrigerator</button>
+    </form>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

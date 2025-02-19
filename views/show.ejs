@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title><%= refrigerator.brand %></title>
+</head>
+<body>
+  <%- include("components/navbar") %>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="<%= refrigerator.image %>" class="img-fluid" alt="<%= refrigerator.brand %>">
+      </div>
+      <div class="col-md-6">
+        <h1 class="mb-4"><%= refrigerator.brand %></h1>
+        <p><strong>Price:</strong> $<%= refrigerator.price %></p>
+        <p><strong>Description:</strong> <%= refrigerator.desc %></p>
+        <p><strong>Door Type:</strong> <%= refrigerator.door %></p>
+        <a href="/phones/<%= refrigerator._id %>/edit" class="btn btn-secondary">Edit</a>
+        <form action="/phones/<%= refrigerator._id %>?_method=DELETE" method="POST" class="d-inline">
+          <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
